@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- font awesome cdn link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <!-- custom css link -->
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+  <div class="main-container">
+    
+
+
+
+  </div>
+    
+    
+      
+            
+          
+        <button type="submit" class="btn1" onclick="openpopup()">Submit</button>
+    <div class="popup" id="popup">
+      <br><br>
+      <img src="https://i.pinimg.com/736x/13/ee/35/13ee35111c3ba791415960464f968a79.jpg" alt="image" width="100px">
+    <br><br><h2>Thank You!</h2>
+    <p>Your details has been succesfully submitted. Thanks!</p><br>
+    <button type="button" class="button" width="50px" onclick="closepopup()">OK</button>
+  </div>
+  
+  <script>
+    let popup = document.getElementById("popup");
+    function openpopup() {
+      popup.classList.add("open-popup");
+
+    }
+    function closepopup() {
+      popup.classList.remove("open-popup");
+
+    }
+  </script>
+  
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- custom css link -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+    <!-- header section starts -->
+
+<header class="header">
+
+        <a href="index.html" class="logo"><i class="fas fa-book"></i> edu</a>
+
+        <nav class="navbar">
+            <a href="index.html" class="hover-underline">home</a>
+            <a href="about.html" class="hover-underline">about</a>
+            <a href="courses.html" class="hover-underline">courses</a>
+            <a href="teacher.html" class="hover-underline">teacher</a>
+            
+            
+            <a href="contact.html" class="hover-underline">contact</a>
+        </nav>
+<!-- 
+        <div class="icons">
+            <div id="login-btn" class="fas fa-user" onclick="login()"></div>
+            <div id="menu-btn" class="fas fa-bars"></div>
+        </div>
+
+
+
+    -->
+    <button type="buttton_register" class="register" onclick="openpopup()">Register</button>
+    <div class="popup" id="popup2">
+        <br><br>
+        <img src="https://i.pinimg.com/736x/13/ee/35/13ee35111c3ba791415960464f968a79.jpg" alt="image" width="100px">
+      <br><br><h2>Thank You!</h2>
+      <p>Your details has been succesfully submitted. Thanks!</p><br>
+      <button type="button" class="button" width="50px" onclick="closepop_1()">OK</button>
+    </div>
+    <div class="popup2" id="popup">
+        <div class="form1">
+            <h3 class="heading3">Registration form:</h3><br>
+            <div class="form-d2">
+
+                <input type="text" placeholder=" Enter your Name" class="box" required ><br><br>
+                <input type="email" placeholder=" Enter Email id" class="box" ><br><br>
+                <input type="password" placeholder="Password" class="box" ><br><br>
+            </div>
+            <lable for="language" > Choose any language:<select value="select language" class="box" id="language" ></lable>
+                <option value="Hindi"> Hindi</option>
+                <option value="English">English</option>
+                <option value="Punjabi"> Punjabi</option>
+                <option value="German">German</option>
+                <option value="French">French</option>
+                <option value="Telugu"> Telugu</option>
+                <option value="Sanskrit"> Sanskrit</option>
+                
+
+            </select><br><br>
+            <button type="submit" class="submit" onclick="closepopup()">Submit</button>
+        </form>
+  </div>
+
+
+<script>
+  let popup = document.getElementById("popup");
+  function openpopup() {
+    popup.classList.add("open-popup");
+
+  }
+  function closepopup() {
+    popup.classList.remove("open-popup");
+
+  
+    openpop_1()
+
+  }
+
+
+  
+  
+    let popup1 = document.getElementById("popup2");
+    function openpop_1() {
+      popup1.classList.add("open-popup1");
+
+    }
+    function closepop_1() {
+      popup1.classList.remove("open-popup1");
+
+    }
+  </script>
+       <!-- <button type="buttton_register" class="register" onclick="register()">Register</button> -->
+       
+       
+       </div>
+        <!-- login form -->
+
+
+
+
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- home section starts-->
+
+    <div class="section1">
+        <section class="home" id="home">
+            
+         <div class="content-home"> <h2 class="best"> The best course you<br> will find here </h2><br><br>
+          <p class="main-para1">At Edu , we believe in the power of education<br> that transcends boundaries. Our online platform is<br> designed to bring the classroom experince to your <br> fingertips, making learning a truly immersive and <br>convenient journey. </p>
+        </div>
+        </section>
+      </div>
+
+
+
+    <!-- home section ends -->
+    <section>
+        <div class="section"><h2 class="heading2">Demo video sessions on Different languages:</h2>
+        <br><img src="./images/separator.svg" width="200px"></div>
+        <br><br><br>
+        <div class="iframe">
+            <iframe width="560" height="315"  border-radius="8px" src="https://www.youtube.com/embed/KzA7OcrpLoI?si=GM0repv6IkcJVSVs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen ></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/WkgdcOSsbCc?si=ZUpMZVvnvtqDGKWw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+           
+        </div><br><br>
+        <centre><div class="iframe1">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/lvWO2qFT1j8?si=xpGD-7TYrecUB7ii" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></centre>
+        </div>
+    </section>
+
+    
+   
+
+   
+
+    
+
+    <!-- footer section stars -->
+    <br><br><br><br><br><br>
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>find us here</h3>
+                <p>You can find us on multiple platforms:</p>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>contact us</h3>
+                <p>+1234 587 1478</p>
+
+                <a href="#" class="link">shiwangi2210@gmail.com</a>
+                <a href="#" class="link">shivang2209@gmail.com</a>
+                <a href="#" class="link">shefali2208@gmail.com</a>
+            </div>
+
+            <div class="box">
+                <h3>Resources</h3>
+                <ul class="list"><li>Recordings</li>
+                <li>Contact us</li>
+            <li>Feedback</li>
+        </ul>
+            </div>
+
+        </div>
+       
+    </section>
+
+    <!-- footer section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+     
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+
+</head>
+<body>
+  <header class="header">
+
+    <a href="#" class="logo"><i class="fas fa-book"></i> edu</a>
+
+    <nav class="navbar">
+        <a href="index.html" class="hover-underline">home</a>
+        <a href="about.html" class="hover-underline">about</a>
+        <a href="courses.html" class="hover-underline">courses</a>
+        <a href="teacher.html" class="hover-underline">teacher</a>
+        
+        
+        <a href="contact.html" class="hover-underline">contact</a>
+    </nav>
+
+    <!-- <div class="icons">
+        <div id="login-btn" class="fas fa-user"></div>
+        <div id="menu-btn" class="fas fa-bars"></div>
+    </div> -->
+
+    <!-- login form -->
+
+    <button type="buttton_register" class="register" onclick="openpopup()">Register</button>
+    <div class="popup" id="popup2">
+        <br><br>
+        <img src="https://i.pinimg.com/736x/13/ee/35/13ee35111c3ba791415960464f968a79.jpg" alt="image" width="100px">
+      <br><br><h2>Thank You!</h2>
+      <p>Your details has been succesfully submitted. Thanks!</p><br>
+      <button type="button" class="button" width="50px" onclick="closepop_1()">OK</button>
+    </div>
+
+    <div class="popup2" id="popup">
+        <div class="form1">
+            <h3 class="heading3">Registration form:</h3><br>
+            <div class="form-d2">
+
+                <input type="text" placeholder=" Enter your Name" class="box" ><br><br>
+                <input type="email" placeholder=" Enter Email id" class="box" ><br><br>
+                <input type="password" placeholder="Password" class="box" ><br><br>
+            </div>
+            <lable for="language" > Choose any language:<select value="select language" class="box" id="language" ></lable>
+                <option value="Hindi"> Hindi</option>
+                <option value="English">English</option>
+                <option value="Punjabi"> Punjabi</option>
+                <option value="German">German</option>
+                <option value="French">French</option>
+                <option value="Telugu"> Telugu</option>
+                <option value="Sanskrit"> Sanskrit</option>
+                
+
+            </select><br><br>
+            <button type="submit" class="submit" onclick="closepopup()">Submit</button>
+        </form>
+  </div>
+
+
+<script>
+  let popup = document.getElementById("popup");
+  function openpopup() {
+    popup.classList.add("open-popup");
+
+  }
+  function closepopup() {
+    popup.classList.remove("open-popup");
+
+  
+    openpop_1()
+
+  }
+
+
+  
+  
+    let popup1 = document.getElementById("popup2");
+    function openpop_1() {
+      popup1.classList.add("open-popup1");
+
+    }
+    function closepop_1() {
+      popup1.classList.remove("open-popup1");
+
+    }
+  </script>
+       
+
+</header>
+<br><br><br>
+<section class="teacher" id="teacher">
+
+  <h1 class="heading">our expert teacher</h1>
+
+  <div class="box-container">
+
+      <div class="box">
+          <div class="image">
+              <img src="https://t4.ftcdn.net/jpg/02/46/83/37/360_F_246833765_fWqwf3kBte31BMKTApNqIuG0qbCbF7zk.jpg" alt="">
+              <div class="share">
+                  <a href="#" class="fab fa-facebook-f"></a>
+                  <a href="#" class="fab fa-twitter"></a>
+                  <a href="#" class="fab fa-instagram"></a>
+              </div>
+          </div>
+          <div class="content">
+              <h3>Ms. Annie</h3>
+              <span>instructor</span>
+          </div>
+      </div>
+
+      <div class="box">
+          <div class="image">
+              <img src="https://img.freepik.com/free-photo/excited-young-blonde-female-teacher-wearing-glasses-classroom-standing-front-chalkboard-holding-book-showing-empty-hand-with-copy-space_141793-106399.jpg?size=626&ext=jpg&ga=GA1.1.44546679.1699315200&semt=ais" alt="image">
+              <div class="share">
+                  <a href="#" class="fab fa-facebook-f"></a>
+                  <a href="#" class="fab fa-twitter"></a>
+                  <a href="#" class="fab fa-instagram"></a>
+              </div>
+          </div>
+          <div class="content">
+              <h3>Ms. Tara </h3>
+              <span>instructor</span>
+          </div>
+      </div>
+
+      <div class="box">
+          <div class="image">
+              <img src="https://media.istockphoto.com/id/1371934584/photo/portrait-of-a-confident-mature-businesswoman-working-in-a-modern-office.jpg?s=612x612&w=0&k=20&c=NF_IO6IEXY3HifRIhRqP0KDFJFdlFwaMwo3zfOOvKnQ=" alt="">
+              <div class="share">
+                  <a href="#" class="fab fa-facebook-f"></a>
+                  <a href="#" class="fab fa-twitter"></a>
+                  <a href="#" class="fab fa-instagram"></a>
+              </div>
+          </div>
+          <div class="content">
+              <h3>Ms. Margot</h3>
+              <span>instructor</span>
+          </div>
+      </div>
+      <div class="box">
+        <div class="image"><img src="https://as1.ftcdn.net/v2/jpg/02/00/16/60/1000_F_200166059_nEzP5SbvLQpy4beFVvzeMS0s1grmaufD.jpg" alt="image" class="image_1">
+        <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+        </div>
+        
+      </div>
+    <div class="content">
+        <h3> Mr. Edward </h3>
+        <span>instructor </span>
+    </div></div><br><br>
+
+
+      <div class="box">
+          <div class="image">
+              <img src="https://img.freepik.com/premium-photo/man-classroom-with-chalkboard-him_37787-3606.jpg" alt="">
+              <div class="share">
+                  <a href="#" class="fab fa-facebook-f"></a>
+                  <a href="#" class="fab fa-twitter"></a>
+                  <a href="#" class="fab fa-instagram"></a>
+              </div>
+          </div>
+          <div class="content">
+              <h3> Mr. Charlie</h3>
+              <span>instructor</span>
+          </div>
+      </div>
+      <div class="box">
+        <div class="image">
+            <img src="https://www.shutterstock.com/image-photo/teacher-classroom-on-blackboard-background-260nw-110984234.jpg" alt="">
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+            </div>
+        </div>
+        <div class="content">
+            <h3> Ms. Kylie</h3>
+            <span>instructor</span>
+        </div>
+    </div>
+
+  </div>
+
+</section><br><br><br><br>
+<!-- footer section starts -->
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>find us here</h3>
+            <p>You can find us on multiple platforms:</p>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>contact us</h3>
+            <p>+1234 587 1478</p>
+
+            <a href="#" class="link">shiwangi2210@gmail.com</a>
+            <a href="#" class="link">shivang2209@gmail.com</a>
+            <a href="#" class="link">shefali2208@gmail.com</a>
+        </div>
+
+        <div class="box">
+            <h3>Resources</h3>
+            <ul class="list"><li>Recordings</li>
+            <li>Contact us</li>
+        <li>Feedback</li>
+    </ul>
+        </div>
+
+    </div>
+   
+</section>
+
+<!-- footer section ends -->
+
+
+
+
+
+  
+</body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- custom css link -->
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+</head>
+<body>
+  <header class="header">
+
+    <a href="index.html" class="logo"><i class="fas fa-book"></i> edu</a>
+
+
+    <nav class="navbar">
+        <a href="index.html" class="hover-underline">home</a>
+        <a href="about.html" class="hover-underline">about</a>
+        <a href="courses.html" class="hover-underline">courses</a>
+        <a href="teacher.html" class="hover-underline">teacher</a>
+       <a href="contact.html" class="hover-underline">contact</a>
+    </nav>
+
+    <!-- <div class="icons">
+        <div id="login-btn" class="fas fa-user"></div>
+        <div id="menu-btn" class="fas fa-bars"></div>
+    </div> -->
+
+    <!-- login form -->
+
+    <button type="buttton_register" class="register" onclick="openpopup()">Register</button>
+    <div class="popup" id="popup2">
+        <br><br>
+        <img src="https://i.pinimg.com/736x/13/ee/35/13ee35111c3ba791415960464f968a79.jpg" alt="image" width="100px">
+      <br><br><h2>Thank You!</h2>
+      <p>Your details has been succesfully submitted. Thanks!</p><br>
+      <button type="button" class="button" width="50px" onclick="closepop_1()">OK</button>
+    </div>
+
+    <div class="popup2" id="popup">
+        <div class="form1">
+            <h3 class="heading3">Registration form:</h3><br>
+            <div class="form-d2">
+
+                <input type="text" placeholder=" Enter your Name" class="box" ><br><br>
+                <input type="email" placeholder=" Enter Email id" class="box" ><br><br>
+                <input type="password" placeholder="Password" class="box" ><br><br>
+            </div>
+            <lable for="language" > Choose any language:<select value="select language" class="box" id="language" ></lable>
+                <option value="Hindi"> Hindi</option>
+                <option value="English">English</option>
+                <option value="Punjabi"> Punjabi</option>
+                <option value="German">German</option>
+                <option value="French">French</option>
+                <option value="Telugu"> Telugu</option>
+                <option value="Sanskrit"> Sanskrit</option>
+                
+
+            </select><br><br>
+            <button type="submit" class="submit" onclick="closepopup()">Submit</button>
+        </form>
+  </div>
+
+
+<script>
+  let popup = document.getElementById("popup");
+  function openpopup() {
+    popup.classList.add("open-popup");
+
+  }
+  function closepopup() {
+    popup.classList.remove("open-popup");
+
+  
+    openpop_1()
+
+  }
+
+
+  
+  
+    let popup1 = document.getElementById("popup2");
+    function openpop_1() {
+      popup1.classList.add("open-popup1");
+
+    }
+    function closepop_1() {
+      popup1.classList.remove("open-popup1");
+
+    }
+    
+
+  </script>
+       
+    </form>
+
+</header><br><br><br><br>
+
+<!-- header section ends -->
+<section class="contact" id="contact">
+
+  <h1 class="heading">contact us</h1>
+
+  <div class="row">
+      <div class="image">
+          <img src="images/contact.png" alt="">
+      </div>
+      <form action="">
+          <h3>Send us a message:</h3>
+          <input type="text" placeholder="name" class="box">
+          <input type="email" placeholder="email" class="box">
+          <input type="number" placeholder="phone number" class="box">
+          <textarea placeholder="message" class="box" cols="30" rows="10"></textarea>
+          <a href="#" class="btn" id="popup3">
+              <span class="text text-1" id="popup3">send message</span>
+              <span class="text text-2" aria-hidden="true" >send message</span>
+          </a>
+      </form>
+  </div>
+
+</section><br><br><br><br>
+<div class="our_team"><h1>Our Team</h1>
+<img src="./images/separator.svg" alt="image"></div>
+
+<div class="cards_details">
+  <div class="cards_1_shiwangi">
+    <div class="image_1"> <img src="https://cdn4.iconfinder.com/data/icons/business-conceptual-part1-1/513/business-woman-512.png" class="image_1"></div>
+    <div class="main_div"><div class="title"><h2>Shiwangi</h2> </div>
+    <div class="information"><p>CEO & Founder</p> </div>
+    <div class="discription"> <p>Shiwangi3679@gmail.com</p></div>
+  <div class="button_contact_1"><button class="button_contact">Contact</button></div></div></div>
+    <div class="cards_1_shefali">
+      <div class="image_2"> <img src="https://cdn4.iconfinder.com/data/icons/business-conceptual-part1-1/513/business-woman-512.png" class="image_2 "></div>
+     <div class="main_div"> <div class="title"><h2>Shefali Sachdeva </h2></div>
+      <div class="information"><p>Chief financial Officer</p></div>
+      <div class="discription"><p>Shefali2786@gmail.com</p></div>
+      <div class="button_contact_1"><button class="button_contact">Contact</button></div></div>
+    </div>
+    <div class="cards_1_shivang">
+      <div class="image_3"> <img src="https://www.shareicon.net/data/512x512/2017/01/06/868320_people_512x512.png" class="image_3"></div>
+      <div  class="main_div"><div class="title"> <h2>Shivang Jaswal </h2></div>
+      <div class="information"> Manager</div>
+      <div class="discription"><p> shivang4578@gmail.com</p></div>
+      <div class="button_contact_1"><button class="button_contact">Contact</button></div></div>
+
+    </div></div>
+
+<!-- contact section ends --><br><br><br><br>
+<!-- footer section starts here -->
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>find us here</h3>
+            <p>You can find us on multiple platforms:</p>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>contact us</h3>
+            <p>+1234 587 1478</p>
+
+            <a href="#" class="link">shiwangi2210@gmail.com</a>
+            <a href="#" class="link">shivang2209@gmail.com</a>
+            <a href="#" class="link">shefali2208@gmail.com</a>
+        </div>
+
+        <div class="box">
+            <h3>Resources</h3>
+            <ul class="list"><li>Recordings</li>
+            <li>Contact us</li>
+        <li>Feedback</li>
+    </ul>
+        </div>
+
+    </div>
+   
+</section>
+
+<!-- footer section ends -->
+
+
+
+
+
+
+
+  
+</body>
+</html>
